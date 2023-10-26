@@ -1,14 +1,16 @@
 # shelld-zelt
-ömer babanın bize shell düzenele hediyeleri (her eve lazım)
+Ömer babanın bize shell düzenele hediyeleri (her eve lazım)
+nc de alınan sheller çok kötü geliyor bunları aşağıdan yukarıya doğru kullandıkça shell daha kullanışlı hale gelir.
 
-service --status-all
 
-find / -perm -u=s -type f 2>/dev/null
+6) service --status-all
 
-export SHELL=bash
+5) find / -perm -u=s -type f 2>/dev/null
 
-export TERM=xterm
+4) export SHELL=bash
 
-stty raw -echo; fg
+3) export TERM=xterm
 
-python3 -c 'import pty; pty.spawn("/bin/bash")'
+2) stty raw -echo; fg
+
+1) python3 -c 'import pty; pty.spawn("/bin/bash")'
